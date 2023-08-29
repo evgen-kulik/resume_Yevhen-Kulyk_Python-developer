@@ -46,7 +46,7 @@ body {
 
 .main-conteiner{
     width: 1280px;
-    height: 1400px;
+    height: 1600px;
     margin: auto;
     background-color: var(--resume-background);
     padding: 14px 61px 56px 29px;
@@ -66,7 +66,7 @@ body {
     font-size: 16px;
     line-height: 1.25;
     color: var(--head-tekst-color);
-    margin-bottom: 11px;
+    margin-bottom: 1px;
 }
 
 /*---container----*/
@@ -74,7 +74,7 @@ body {
 .conteiner {
    display: flex;
     width: 1200px;
-    height: 1319px;
+    height: 1600px;
     background-color: var(--list-background);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
@@ -94,35 +94,10 @@ body {
     margin-right: 17px;
 }
 
-.social-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
 
-.social-list-link {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--resume-background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon{
-    fill: var(--akcent-color)
 
-}
 
-.social-list-icon {
-    margin: 0 auto;
-    display: block;
-    fill: var(--a-side-backgraund)
-}
 
 .aside-secondary-heder {
     color: var(--a-side-text-color);
@@ -131,45 +106,42 @@ body {
 
 .about,
 .skills,
-.int,
 .lang {
     padding-left: 30px;
     padding-right: 9px;
 }
 
-.table-th {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: start;
-}
-
-.table-td {
-    font-weight: 400;
-    opacity: 0.5;
-   
-}
-
-.adress-link {
-    color: inherit;
+.contact-link,
+contact-link_tel,
+contact-link_email{
+    color: gray;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adress-link:hover,
-.adress-link:focus {
+.contact-link:hover,
+.contact-link:focus,
+.project-link:hover,
+.project-link:focus
+ {
     color: var(--akcent-color);
 }
 
 .skills-list,
-.int-list,
-.lang-list {
+.lang-list,
+.contact-list{
     font-size: 14px;
     line-height: 1.71;
 }
 
+.contact-list{
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.contact-item::before,
 .skills-item::before,
-.int-item::before,
-.lang-item::before{
+.lang-item::before
+{
     color: var(--akcent-color);
     /* Цвет маркера */
     content: "▪";
@@ -193,21 +165,22 @@ body {
 
 .bold-text{
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.21;
-    margin-bottom: 19px;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: var(--text-color);
 }
 
 .hero-name {
     font-weight: 700;
     font-size: 45px;
-    line-height: 1.22;
-    margin-bottom: 24px;
+    line-height: 1.1;
+    margin-bottom: 10px;
 }
 
 .text {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 140%;
     color: var(--text-color);
 }
 
@@ -220,14 +193,14 @@ body {
 }
 
 .akcent-color {
-    color: var(--akcent-color);
+    color: #0072ff;
 }
 
 .date-text {
     font-size: 12px;
-    line-height: 1.25;
+    line-height: 1.5;
     color: var(--text-date);
-    margin-bottom: 8px;
+    margin-bottom: 1px;
 }
 
 .responsibilities-list {
@@ -241,7 +214,7 @@ body {
 
 .responsibilities-item {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 140%;
     color: var(--text-color);
     margin-left: 20px;
 }
@@ -249,7 +222,7 @@ body {
 .university-name {
     display: block;
     max-width: 410px;
-    color: var(--akcent-color);
+    color: #0072ff;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -270,7 +243,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
-    color: var(--akcent-color);
+    color: #0072ff;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -280,5 +253,23 @@ body {
 }
 
 .date-text-curses {
-    margin-bottom: auto;
+    margin-bottom: 1.4px;
 }
+
+.project-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #0072ff;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.projects-item {
+    font-size: 14px;
+    line-height: 110%;
+    color: var(--head-text-color);
+    margin-left: 20px;
+}
+
+.projects-list {
+    list-style-type: disc;
