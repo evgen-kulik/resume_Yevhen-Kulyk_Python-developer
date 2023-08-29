@@ -1,0 +1,284 @@
+:root {
+    --head-tekst-color: #000000;
+    --akcent-color: #FB6D3A;
+    --text-color: #595959;
+    --text-date : #A8A8A8;
+    --a-side-text-color: #FFFFFF;
+    --a-side-backgraund: #1E2939;
+    --list-background: #FFFFFF;
+    --resume-background:#F5F7FA;
+    --background-color: #E5E5E5;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: Montserrat, Raleway;
+    background-color: var(--background-color);
+}
+
+.main-conteiner{
+    width: 1280px;
+    height: 1400px;
+    margin: auto;
+    background-color: var(--resume-background);
+    padding: 14px 61px 56px 29px;
+}
+
+/*----components----*/
+
+.secondary-heder {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.23;
+    color: var(--head-tekst-color);
+}
+
+.third-header {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--head-tekst-color);
+    margin-bottom: 11px;
+}
+
+/*---container----*/
+
+.conteiner {
+   display: flex;
+    width: 1200px;
+    height: 1319px;
+    background-color: var(--list-background);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*----aside----*/
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    background-color: var(--a-side-backgraund);
+    width: 370px;
+    height: 100%;
+    padding-top: 66px;
+    color: var(--a-side-text-color);
+    margin-left: 11px;
+    margin-right: 17px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-list-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--resume-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
+    fill: var(--akcent-color)
+
+}
+
+.social-list-icon {
+    margin: 0 auto;
+    display: block;
+    fill: var(--a-side-backgraund)
+}
+
+.aside-secondary-heder {
+    color: var(--a-side-text-color);
+    margin-bottom: 8px;
+}
+
+.about,
+.skills,
+.int,
+.lang {
+    padding-left: 30px;
+    padding-right: 9px;
+}
+
+.table-th {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: start;
+}
+
+.table-td {
+    font-weight: 400;
+    opacity: 0.5;
+   
+}
+
+.adress-link {
+    color: inherit;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress-link:hover,
+.adress-link:focus {
+    color: var(--akcent-color);
+}
+
+.skills-list,
+.int-list,
+.lang-list {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.skills-item::before,
+.int-item::before,
+.lang-item::before{
+    color: var(--akcent-color);
+    /* Цвет маркера */
+    content: "▪";
+    /* Сам маркер */
+    padding-right: 10px;
+    /* Расстояние от маркера до текста */
+    
+}
+
+/*----/aside----*/
+
+/*----right part----*/
+
+.section {
+    padding-top: 8px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+/*----hero-section----*/
+
+.bold-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    margin-bottom: 19px;
+}
+
+.hero-name {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.22;
+    margin-bottom: 24px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-color);
+}
+
+.hero-text {
+    margin-bottom: 24px;
+}
+
+.right-header {
+    margin-bottom: 8px;
+}
+
+.akcent-color {
+    color: var(--akcent-color);
+}
+
+.date-text {
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--text-date);
+    margin-bottom: 8px;
+}
+
+.responsibilities-list {
+    list-style-type: disc;
+}
+
+.responsibilities-list,
+.university-list {
+    margin-bottom: 27px;
+}
+
+.responsibilities-item {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-color);
+    margin-left: 20px;
+}
+
+.university-name {
+    display: block;
+    max-width: 410px;
+    color: var(--akcent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.university-name:hover,
+.university-name:focus {
+    color: #cc8460;
+}
+
+.courses-item{
+    margin-bottom: 5px;
+}
+
+.courses-name {  
+    margin-bottom: auto;
+}
+
+.company-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--akcent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-name:hover,
+.company-name:focus {
+    color: #cc8460;
+}
+
+.date-text-curses {
+    margin-bottom: auto;
+}
