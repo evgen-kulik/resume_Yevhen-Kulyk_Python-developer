@@ -46,7 +46,7 @@ body {
 
 .main-conteiner{
     width: 1280px;
-    height: 1600px;
+    height: 1650px;
     margin: auto;
     background-color: var(--resume-background);
     padding: 14px 61px 56px 29px;
@@ -94,11 +94,6 @@ body {
     margin-right: 17px;
 }
 
-
-
-
-
-
 .aside-secondary-heder {
     color: var(--a-side-text-color);
     margin-bottom: 8px;
@@ -129,12 +124,7 @@ contact-link_email{
 .skills-list,
 .lang-list,
 .contact-list{
-    font-size: 14px;
-    line-height: 1.71;
-}
-
-.contact-list{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.71;
 }
 
@@ -179,9 +169,10 @@ contact-link_email{
 }
 
 .text {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 140%;
     color: var(--text-color);
+    text-align: justify;
 }
 
 .hero-text {
@@ -197,7 +188,7 @@ contact-link_email{
 }
 
 .date-text {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
     color: var(--text-date);
     margin-bottom: 1px;
@@ -213,7 +204,7 @@ contact-link_email{
 }
 
 .responsibilities-item {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 140%;
     color: var(--text-color);
     margin-left: 20px;
