@@ -46,7 +46,6 @@ body {
 
 .main-conteiner{
     width: 1280px;
-    height: 1650px;
     margin: auto;
     background-color: var(--resume-background);
     padding: 14px 61px 56px 29px;
@@ -74,7 +73,6 @@ body {
 .conteiner {
    display: flex;
     width: 1200px;
-    height: 1600px;
     background-color: var(--list-background);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
@@ -87,7 +85,6 @@ body {
     gap: 29px;
     background-color: var(--a-side-backgraund);
     width: 370px;
-    height: 100%;
     padding-top: 66px;
     color: var(--a-side-text-color);
     margin-left: 11px;
