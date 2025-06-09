@@ -1,0 +1,262 @@
+:root {
+    --head-text-color: #000000;
+    --akcent-color: #FB6D3A;
+    --text-color: #595959;
+    --text-date : #000000;
+    --a-side-text-color: #FFFFFF;
+    --a-side-backgraund: #1E2939;
+    --list-background: #5decbc24;
+    --resume-background:#F5F7FA;
+    --background-color: #E5E5E5;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 10;
+    margin-bottom: 10;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: Montserrat, Raleway;
+    background-color: var(--background-color);
+}
+
+.main-conteiner{
+    width: 1280px;
+    margin: auto;
+    background-color: var(--resume-background);
+    padding: 14px 61px 56px 29px;
+}
+
+/*----components----*/
+
+.secondary-header {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.23;
+    color: var(--akcent-color);
+}
+
+.third-header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    color: var(--head-text-color);
+    margin-bottom: 20px;
+}
+
+/*---container----*/
+
+.conteiner {
+   display: flex;
+    width: 1200px;
+    background-color: var(--list-background);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*----aside----*/
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    background-color: var(--a-side-backgraund);
+    width: 370px;
+    padding-top: 66px;
+    color: var(--a-side-text-color);
+    margin-left: 11px;
+    margin-right: 17px;
+}
+
+.aside-secondary-header {
+    color: var(--a-side-text-color);
+    margin-bottom: 8px;
+}
+
+.about,
+.skills,
+.lang {
+    padding-left: 30px;
+    padding-right: 9px;
+}
+
+.contact-link,
+contact-link_tel,
+contact-link_email{
+    color: var(--a-side-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover,
+.contact-link:focus,
+.project-link:hover,
+.project-link:focus
+ {
+    color: var(--akcent-color);
+}
+
+.skills-list,
+.lang-list,
+.contact-list{
+    font-size: 16px;
+    line-height: 1.71;
+}
+
+.contact-item::before,
+.skills-item::before,
+.lang-item::before
+{
+    color: var(--akcent-color);
+    /* Цвет маркера */
+    content: "▪";
+    /* Сам маркер */
+    padding-right: 10px;
+    /* Расстояние от маркера до текста */
+    
+}
+
+/*----/aside----*/
+
+/*----right part----*/
+
+.section {
+    padding-top: 8px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+/*----hero-section----*/
+
+.bold-text{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+.hero-name {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.hero-text {
+    margin-bottom: 24px;
+}
+
+.right-header {
+    margin-bottom: 15px;
+}
+
+.akcent-color {
+    color: black;
+}
+
+.date-text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-date);
+    margin-bottom: 10px;
+}
+
+.responsibilities-list {
+    list-style-type: disc;
+}
+
+.responsibilities-list,
+.university-list {
+    margin-bottom: 27px;
+}
+
+.responsibilities-item {
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--text-color);
+    margin-left: 20px;
+}
+
+.university-name {
+    display: block;
+    color: black;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.university-name:hover,
+.university-name:focus {
+    color: #cc8460;
+}
+
+.courses-item{
+    margin-bottom: 5px;
+}
+
+.courses-name {  
+    margin-bottom: auto;
+}
+
+.company-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    color: black;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-name:hover,
+.company-name:focus {
+    color: #cc8460;
+}
+
+.date-text-curses {
+    margin-bottom: 1.4px;
+}
+
+.project-link {
+    font-size: 18px;
+    line-height: 1.71;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.projects-item {
+    font-size: 14px;
+    line-height: 110%;
+    color: var(--head-text-color);
+    margin-left: 20px;
+}
+
+.projects-list {
+    list-style-type: disc;
