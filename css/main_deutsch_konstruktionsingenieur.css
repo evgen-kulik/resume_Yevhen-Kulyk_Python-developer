@@ -154,7 +154,7 @@ contact-link_email{
     font-weight: 700;
     font-size: 25px;
     line-height: 1.1;
-    margin-bottom: 25px;
+    margin-bottom: 6px;
     color: var(--text-color);
 }
 
@@ -260,3 +260,13 @@ contact-link_email{
 
 .projects-list {
     list-style-type: disc;
+}
+
+.subtext {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #7a7a7a; /* тускло-серый цвет */
+    margin-top: 4px;  /* ближе к заголовку */
+    margin-bottom: 20p
+}
+
